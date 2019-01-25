@@ -34,12 +34,15 @@ class Student extends Person {
         this.favSubjects = attributes.favSubjects;
     }
     listsSubjects() {
-        console.log();
+        this.favSubjects.forEach(subject => console.log(`${subject}`));
     }
     PRAssignment() {
         console.log(`${student.name} has submitted a PR for ${subject}`);
     }
-}
+    sprintChallenge() {
+        console.log(`${student.name} has begun sprint challenge on ${subject}`);
+    }
+};
 
 class ProjectManager extends Instructor {
     constructor(attributes) {
