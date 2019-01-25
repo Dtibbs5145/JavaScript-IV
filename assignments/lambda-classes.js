@@ -21,7 +21,7 @@ class Instructor extends Person {
     demo(subject) {
         console.log(`Today we are learning about ${subject}`);
     }
-    grade(student) {
+    grade(student, subject) {
     console.log(`${student.name} receives a perfect score on ${subject}`);
 }
 };
